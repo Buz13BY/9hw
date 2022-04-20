@@ -389,7 +389,7 @@ p {
 }
 
 .accommodation-list-item-last {
-  background-image: url('..//img/accomodetion/33.jpg');
+  position: relative;
 }
 
 .accommodation-list-item-img {
@@ -457,9 +457,18 @@ p {
   color: #FFFFFF;
 }
 
-.accommodation-list-item-last-link::before {
-  display: block;
-  height: 100%;
+.accommodation-list-item-last-more-link::before {
+ content: '';
+ position: absolute;
+ display: block;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ background-image: url('..//img/accomodetion/33.jpg');
+ border-radius: 15px;
+ background-repeat: no-repeat;
+ background-size: 100%;
 }
 
 /* tur */
