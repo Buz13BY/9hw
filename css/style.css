@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: 'Muller';
-  src: url('../fonts/MullerMedium.woff2') format('woff2'),
-    url('../fonts/MullerMedium.woff') format('woff');
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
   font-display: swap;
   font-weight: 400;
   font-style: normal;
@@ -27,6 +27,10 @@
   font-display: swap;
   font-weight: 800;
   font-style: normal;
+}
+
+:root {
+  --main-color: #CC9933;
 }
 
 a {
@@ -85,8 +89,8 @@ p {
   display: inline-block;
   padding: 13px 20px;
   font-size: 16px;
-  color: #CC9933;
-  border: 1px solid #CC9933;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
   border-radius: 10px;
   cursor: pointer;
   transition: background-color .3s ease, color .5s ease, border .3s ease, scale 5s ease;
@@ -128,7 +132,7 @@ p {
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
-  color: #CC9933;
+  color: var(--main-color);
 }
 
 .header-bottom {
@@ -197,6 +201,7 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 15px;
+  position:relative;
 }
 
 .section-spec-left-list-item:not(:last-child){
@@ -204,11 +209,11 @@ p {
 }
 
 .section-spec-left-list-item-mald {
-  background: url('../img/mald.jpg');
+  background: linear-gradient(to right, #304059D6,16%, #35415300), url('../img/mald.jpg');
 }
 
 .section-spec-left-list-item-creed {
-  background: url('../img/creed.jpg');
+  background: linear-gradient(to right, #304059D6,16%, #35415300), url('../img/creed.jpg');
 }
 
 .section-spec-left-list-item-heading {
@@ -222,13 +227,14 @@ p {
 .section-spec-left-list-item-price {
   margin-left: 40px;
   margin-top: 15px;
+  margin-bottom: 47px;
   font-size: 20px;
+  font-weight: 400;
   line-height: 1;
   color: #FFFFFF;
 }
 
 .section-spec-left-list-item-more {
-  margin-top: 47px;
   margin-left: 40px;
   font-size: 16px;
   line-height: 1;
@@ -242,7 +248,7 @@ p {
 .section-spec-right {
   width: 574px;
   margin-top: 20px;
-  background: url('..//img/33\ 1.jpg');
+  background: linear-gradient(to right, #304059D6,16%, #35415300), url('..//img/33\ 1.jpg');
   background-repeat: no-repeat;
   border-radius: 15px;
 }
@@ -260,6 +266,7 @@ p {
 .section-spec-right-list-item-price {
   margin-left: 40px;
   margin-top: 15px;
+  margin-bottom: 47px;
   font-size: 30px;
   font-weight: 400;
   line-height: 1;
@@ -319,7 +326,7 @@ p {
   font-size: 20px;
   line-height: 40px;
   font-weight: 500;
-  color: #CC9933;
+  color: var(--main-color);
 }
 
 .section-service-list-item-text {
@@ -431,11 +438,14 @@ p {
 }
 
 .accommodation-list-item-name {
+  margin-top: 16px;
   margin-left: 45px;
+  margin-bottom: 16px;
 }
 
 .accommodation-list-item-adress {
   margin-left: 45px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -586,7 +596,7 @@ line-height: 24px;
 
 .contacts-tel {
   display: block;
-  color: #CC9933;
+  color: var(--main-color);
 }
 
 .contacts-mail-description {
@@ -620,7 +630,7 @@ line-height: 24px;
   padding-top: 51px;
   padding-left: 52px;
   padding-right: 51px;
-  background-image: url('/img/footer-logo.svg');
+  background-image: url('../img/footer-logo.svg');
   background-repeat: no-repeat;
   background-position: 737px bottom;
 }
